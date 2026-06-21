@@ -1,0 +1,61 @@
+/* ===== CSS Reset & Global Tokens ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Light Clean Palette */
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.7);
+  --bg-input: #f1f3f8;
+
+  --text-primary: #1a1d2e;
+  --text-secondary: #6b7194;
+  --text-muted: #a0a5be;
+
+  --accent: #4a9eff;
+  --accent-light: #7bb8ff;
+  --accent-soft: rgba(74, 158, 255, 0.1);
+  --accent-gradient: linear-gradient(135deg, #a0c4ff 0%, #4a9eff 50%, #7dd3fc 100%);
+
+  --pink: #e8a0bf;
+  --pink-soft: rgba(232, 160, 191, 0.12);
+
+  --border: rgba(0, 0, 0, 0.06);
+  --border-focus: rgba(74, 158, 255, 0.4);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.08);
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 500ms ease;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
