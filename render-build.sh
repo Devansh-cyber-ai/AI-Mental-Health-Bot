@@ -6,7 +6,7 @@ set -o errexit
 # Install root dependencies (Express server)
 npm install
 
-# Install client dependencies and build
+# Install client dependencies (including devDependencies like vite) and build
 cd client
-npm install
+npm install --include=dev
 npm run build
